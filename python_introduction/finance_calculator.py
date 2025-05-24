@@ -1,9 +1,9 @@
 # Prompt the user for their monthly income 
-monthly_income_str = input("Enter Monthly Income: ")
+monthly_income_str = input("Enter your monthly income: ")
 monthly_income = float(monthly_income_str) # Convert the string input to an integer
 
 # Prompt the user for their monthly expenses
-monthly_expenses_str = input("Enter Monthly Expense:  ")
+monthly_expenses_str = input("Enter your total monthly expenses:  ")
 monthly_expenses = float(monthly_expenses_str) # Convert the string input to an integer
 
 
