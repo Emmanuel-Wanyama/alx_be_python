@@ -1,6 +1,6 @@
 # Prompt User for Pattern Size
 try:
-    size_str = input("Enter the size of the pattern (a positive integer): ")
+    size_str = input("Enter the size of the pattern: ")
     size = int(size_str)
 
     # Check if the input is a positive integer
