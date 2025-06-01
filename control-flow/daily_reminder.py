@@ -28,4 +28,4 @@ else:
     reminder = f"{base_reminder}. (Time-bound status was not recognized)."
 
 # Print the final combined reminder
-print(reminder)
+print(f"reminder")
