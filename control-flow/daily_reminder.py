@@ -1,21 +1,21 @@
-# Prompt user for description of task
+# Prompt user for task of task
 
-description = input("Task description? ")
-task_priority = input("Task priority? (high/medium/low): ").lower()
+task = input("Task task? ")
+priority = input("Task priority? (high/medium/low): ").lower()
 time_bound = input("Is the task time bound (yes/no)? ").lower()
 
 # Prepare the base reminder message based on priority
 base_reminder = ""
-match task_priority:
+match priority:
     case "high":
-        base_reminder = f"Your task: **{description}** is a high priority task"
+        base_reminder = f"Your task: **{task}** is a high priority task"
     case "medium":
-        base_reminder = f"Your task: **{description}** is a medium priority task"
+        base_reminder = f"Your task: **{task}** is a medium priority task"
     case "low":
-        base_reminder = f"Your task: **{description}** is a low priority task"
+        base_reminder = f"Your task: **{task}** is a low priority task"
     case _:
         # Default for unrecognized priority
-        base_reminder = f"Your task: **{description}** has an unrecognized priority"
+        base_reminder = f"Your task: **{task}** has an unrecognized priority"
 
 # Modify the reminder based on time sensitivity
 final_reminder = ""
