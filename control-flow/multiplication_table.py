@@ -1,8 +1,8 @@
-Prompt User for a Number:
+#Prompt User for a Number:
 
 try:
     number_str = input("Enter a number to see its multiplication table: ")
-    number = float(number_str) # Use float to allow for decimal numbers too
+    number = int(number_str) # Use float to allow for decimal numbers too
 
     print(f"\nMultiplication Table for {number}:\n")
 
