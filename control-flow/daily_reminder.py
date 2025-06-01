@@ -21,11 +21,11 @@ match priority:
 reminder = ""
 if time_bound == "yes":
     reminder = f"{base_reminder} requires immediate attention today!"
-elif time_bound == "no": # Changed 'No' to 'no' for consistency with .lower()
-    reminder = f"{base_reminder} does not require immediate attention today." # Closes the sentence if not time-bound
+elif time_bound == "no":
+    reminder = f"{base_reminder} does not require immediate attention today."
 else:
     # Handles cases where time_bound is not 'yes' or 'no'
     reminder = f"{base_reminder}. (Time-bound status was not recognized)."
 
-# Print the final combined reminder
-print(f"reminder")
+# Print the final combined reminder, starting with "Reminder: "
+print(f"Reminder: {reminder}")
