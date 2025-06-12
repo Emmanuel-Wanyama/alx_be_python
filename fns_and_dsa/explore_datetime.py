@@ -16,7 +16,7 @@ def calculate_future_date():
     """
     while True:
         try:
-            days_to_add_str = input("Enter the number of days to add (integer): ")
+            days_to_add_str = input("Enter the number of days to add to the current date: ")
             days_to_add = int(days_to_add_str) # Convert user input to an integer
             break # Exit loop if conversion is successful
         except ValueError:
