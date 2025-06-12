@@ -52,12 +52,14 @@ def main():
             continue # Continue loop to ask for input again
 
     while True:
-        # Prompt for the unit (C for Celsius, F for Fahrenheit)
-        unit = input("Enter the unit (C for Celsius, F for Fahrenheit): ").strip().upper()
-        if unit in ['C', 'F']:
-            break # Exit loop if unit is valid
-        else:
-            print("Invalid unit. Please enter 'C' or 'F'.")
+        # Updated prompt string as per requirement
+        temperature_str = input("Enter the temperature to convert: ").strip()
+        try:
+            temperature = float(temperature_str) # Convert input to a float
+            break # Exit loop if conversion is successful
+        except ValueError:
+            # Raise an error if input is not a numeric value, as per requirement
+            raise ValueError("Invalid temperature. Please enter a numeric value.")
 
     # Perform the conversion based on the entered unit
     if unit == 'C':
