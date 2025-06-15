@@ -2,7 +2,7 @@ import sys
 from bank_account import BankAccount
 
 def main():
-    account = BankAccount(250.0)  # Example starting balance
+    account = BankAccount(250.00)  # Example starting balance
     if len(sys.argv) < 2:
         print("Usage: python main.py <command>:<amount>")
         print("Commands: deposit, withdraw, display")
@@ -24,8 +24,6 @@ def main():
         print(f"Current Balance: ${account.display_balance():.2f}")
     else:
         print("Invalid command.")
-
-print(f"Current Balance: ${account.display_balance():.2f}")
 
 if __name__ == "__main__":
     main()
