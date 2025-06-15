@@ -25,7 +25,7 @@ class Library:
         """
         self._books = []  # Private list to store Book instances
 
-    def add_book(self, book):
+    def add_book(self):
         """
         Adds a Book object to the library's collection.
 
@@ -45,7 +45,7 @@ class Library:
         self._books.append(book)
         print(f"Added book: '{book.title}' by {book.author}.")
 
-    def check_out_book(self, title):
+    def check_out_book(self):
         """
         Attempts to check out a book by its title.
         If the book is found and available, its status is updated.
@@ -68,7 +68,7 @@ class Library:
         print(f"Book with title '{title}' not found in the library.")
         return False
 
-    def return_book(self, title):
+    def return_book(self):
         """
         Attempts to return a book by its title.
         If the book is found and checked out, its status is updated.
