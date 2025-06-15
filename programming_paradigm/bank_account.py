@@ -16,6 +16,6 @@ class BankAccount():
         return False
 # Current Balance: The account minus all the deposits and withdrawals 
     def display_balance(self):
-        return self.account_balance 
+        return f"Current balance: ${self.account_balance():.2f}" 
 
    
