@@ -7,7 +7,7 @@ def main():
         print("Usage: python main.py <command>:<amount>")
         print("Commands: deposit, withdraw, display")
         print(f"Current Balance: ${account.display_balance():.2f}")
-        sys.exit(1)
+        sys.exit(0)
 
     command, *params = sys.argv[1].split(':')
     amount = float(params[0]) if params else None
