@@ -1,6 +1,6 @@
 # BankAccount: This file defines the BankAccount class.
 class BankAccount():
-    def __init__(self, account_balance = 0.0):
+    def __init__(self, account_balance = 250.00):
         self.account_balance = account_balance
 
     def deposit(self, amount):
@@ -14,8 +14,8 @@ class BankAccount():
             self.account_balance -= amount
             return True
         return False
-# Current Balance: The account minus all the deposits and withdrawals 
+
     def display_balance(self):
-        return f"Current balance: ${self.account_balance():.2f}" 
+       print(f"Current Balance: ${self.account_balance:.2f}")
 
    
