@@ -17,6 +17,6 @@ def safe_divide(numerator, denominator):
 
     try:
         result = num / den
-        return result
+        return f"The result of the division is {result}"
     except ZeroDivisionError:
         return "Error: Cannot divide by zero."
