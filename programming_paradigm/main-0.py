@@ -6,6 +6,7 @@ def main():
     if len(sys.argv) < 2:
         print("Usage: python main.py <command>:<amount>")
         print("Commands: deposit, withdraw, display")
+        print(f"Current Balance: ${account.display_balance():.2f}")
         sys.exit(1)
 
     command, *params = sys.argv[1].split(':')
