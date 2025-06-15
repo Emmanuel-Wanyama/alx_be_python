@@ -22,7 +22,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.subtract(0, 0), 0) #test zero subtraction
         self.assertEqual(self.calc.subtract(5, 0), 5) #test zero subtraction with positive number   
 
-    def test_multiply(self):
+    def test_multiplication(self):
         """Test the multiplication method."""
         self.assertEqual(self.calc.multiply(2, 3), 6) # Test positive numbers
         self.assertEqual(self.calc.multiply(-1, 1), -1) #test negative and positive numbers
@@ -31,7 +31,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(-1, 5), -5) #test negative multiplication with positive number
         self.assertEqual(self.calc.multiply(2.5, 2), 5.0) #test float multiplication
 
-    def test_divide(self):
+    def test_division(self):
         """Test the division method."""
         self.assertEqual(self.calc.divide(6, 3), 2)
         self.assertEqual(self.calc.divide(5, 0), None)  # Division by zero should return None
