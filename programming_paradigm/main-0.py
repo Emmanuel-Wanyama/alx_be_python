@@ -25,5 +25,7 @@ def main():
     else:
         print("Invalid command.")
 
+print(f"Current Balance: ${account.display_balance():.2f}")
+
 if __name__ == "__main__":
     main()
