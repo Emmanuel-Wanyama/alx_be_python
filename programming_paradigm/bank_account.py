@@ -1,3 +1,4 @@
+# BankAccount: This file defines the BankAccount class.
 class BankAccount():
     def __init__(self, account_balance = 0.0):
         self.account_balance = account_balance
